@@ -20,7 +20,7 @@ if (idade < 18) {
     nome = prompt('Digite um nome');
     participante.push(nome)
     console.log(' Quantos participantes o evento vai ter? ');
-    if (qtdParticipantes < 100) {
+    if (participante.length < 100) {
 
         console.log('Parabens cadastro realizado com sucesso');
 
