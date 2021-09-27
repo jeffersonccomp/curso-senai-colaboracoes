@@ -1,19 +1,17 @@
-let qtdParticipantes;
-let dataEvento = '19/09/2021';
 let Npessoas;
 let nome;
 let idade;
-let participante = ['Ana', 'jose', 'paulo'];
-let dataAtual = '17/08/2021';
+let dataEvento = new Date(2022, 3, 3);
+let dataAtual = new Date();
 
-while dataEvento < dataAtual {
+while (dataEvento.valueOf() < dataAtual.valueOf()) {
 
     console.log('qual a data do evento');
     if (dataEvento > dataAtual) {
         console.log("Evento confirmado");
         break;
     } else
-        console.log('Data já passou, por favor coloque uma data valida')
+        console.log('Data já passou, por favor coloque uma data valida');
 }
 console.log('Qual a idade do participante?');
 if (idade < 18) {
